@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: hexagonal-architecture-demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/myexample
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    enabled: true
+    change-log: classpath:liquibase/changelog-master.yml

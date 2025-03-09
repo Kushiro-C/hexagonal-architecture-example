@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "myself"
+      changes:
+        - sqlFile:
+            path: liquibase/migration/0.1.0_create_table_toto.sql
